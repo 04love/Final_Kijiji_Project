@@ -114,7 +114,7 @@ def community_mapping():
 # Main App Logic
 def main():
     st.sidebar.title("Kijiji Community App")
-    app_page = st.sidebar.radio("Select a Page", ["Dashboard", "EDA", "ML Modeling", "Looker","Community Mapping"])
+    app_page = st.sidebar.radio("Select a Page", ["Dashboard", "Looker", "EDA", "ML Modeling","Community Mapping"])
 
     if app_page == "Dashboard":
         dashboard()
