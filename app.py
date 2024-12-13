@@ -12,7 +12,7 @@ data = pd.read_csv('kijiji_cleaned.csv', encoding='latin1')
 
 # Page 1: Dashboard
 def dashboard():
-    st.image('Logo.PNG', use_column_width=True)
+    st.image('Logo.png', use_column_width=True)
     st.subheader("💡 Abstract:")
     inspiration = '''
 Data Quality: It is impossible to exaggerate the significance of data quality. An essential first step in guaranteeing the precision and dependability of our analysis and models was cleaning and preparing the dataset.
