@@ -41,17 +41,17 @@ def exploratory_data_analysis():
     fig = px.scatter(data, x='Size', y='Price', trendline="ols", title='Relationship between Size and Price')
     st.plotly_chart(fig)
 
-    # average_prices_bathrooms = data.groupby('Bathrooms')['Price'].mean().reset_index()
-    # fig = px.bar(average_prices_bathrooms, x='Bathrooms', y='Price', title='Average Price by Bathrooms')
-    # st.plotly_chart(fig)
+    average_prices_bathrooms = data.groupby('Bathrooms')['Price'].mean().reset_index()
+    fig = px.bar(average_prices_bathrooms, x='Bathrooms', y='Price', title='Average Price by Bathrooms')
+    st.plotly_chart(fig)
 
 
-    # average_prices = data.groupby('Bedrooms')['Price'].mean().reset_index()
-    # fig = px.bar(average_prices, x='Bedrooms', y='Price', title='Average Price by Bedrooms')
-    # st.plotly_chart(fig)
+    average_prices = data.groupby('Bedrooms')['Price'].mean().reset_index()
+    fig = px.bar(average_prices, x='Bedrooms', y='Price', title='Average Price by Bedrooms')
+    st.plotly_chart(fig)
 
-    # fig = px.box(data, x='Type', y='Price', title='Price Distribution by Property Type')
-    # st.plotly_chart(fig)
+    fig = px.box(data, x='Type', y='Price', title='Price Distribution by Property Type')
+    st.plotly_chart(fig)
 
 # Page 3: Machine Learning Modeling
 def machine_learning_modeling():
